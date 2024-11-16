@@ -134,6 +134,7 @@ void processChoice(int choice, Clock& clock) {
 
 }
 
+// Main function
 int main() {
 
     cout << "WELCOME TO 12_AND_24 HOURS CLOCK!";
