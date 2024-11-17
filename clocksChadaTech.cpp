@@ -67,19 +67,25 @@ class Clock {
             cout << "24-Hour Clock: " 
                 << setw(2) << setfill('0') << hours << ":"
                 << setw(2) << setfill('0') << minutes << ":"
-                << setw(2) << setfill('0') << seconds << endl;
+                << setw(2) << setfill('0') << seconds << "\n" << endl;
 
 
         }
 };
 
+void border() {
+    cout << "***************************";
+}
+
 void menuDisplay(int& choice) {
+    border();
     cout << "\nMENU:\n";
-    cout << "1. Add One Hour\n";
-    cout << "2. Add One Minute\n";
-    cout << "3. Add One Second\n";
-    cout << "4. Exit Program\n";
-    cout << "Enter Your Choice: ";
+    cout << "1 - Add One Hour\n";
+    cout << "2 - Add One Minute\n";
+    cout << "3 - Add One Second\n";
+    cout << "4 - Exit Program\n";
+    border();
+    cout << "\nEnter Your Choice: ";
     cin >> choice;
 }
 
